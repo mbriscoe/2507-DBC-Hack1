@@ -5,20 +5,164 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="Description" content="Enter your description here" />
+    <meta name="Description" content="A delightful gallery of cat pictures" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Title</title>
+    <style>
+        /* Inline styles as fallback */
+        body { 
+            font-family: Arial, sans-serif; 
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .container { 
+            width: 100%; 
+        }
+        .row { 
+            display: flex; 
+            flex-wrap: wrap; 
+            margin: 0 -10px;
+        }
+        .col-md-4 { 
+            flex: 0 0 33.333%; 
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        .thumbnail { 
+            border: 1px solid #ddd; 
+            border-radius: 4px; 
+            padding: 4px;
+            margin-bottom: 20px;
+            background: white;
+        }
+        h1 { 
+            color: #333; 
+            margin-bottom: 20px;
+        }
+        h2 { 
+            color: #555; 
+            margin: 30px 0 10px 0;
+        }
+        @media (max-width: 768px) {
+            .col-md-4 { flex: 0 0 50%; }
+        }
+        @media (max-width: 480px) {
+            .col-md-4 { flex: 0 0 100%; }
+        }
+    </style>
+    <title>Cat Gallery - Our New Site</title>
 </head>
 
 <body>
-    <h1>Our New Site</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita architecto aliquam exercitationem reiciendis
-        corrupti. Nulla animi quos accusantium ipsum dolore nisi soluta corporis iste necessitatibus, est dicta
-        consequatur porro libero.
-        Rerum reprehenderit quisquam ea labore veniam, perferendis magnam quidem, quod asperiores cumque qui ullam sunt
-        sequi voluptas facere sit. Delectus itaque tenetur earum quo quisquam sint exercitationem, et maiores est?</p>
+    <div class="container">
+        <h1>Our New Site</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita architecto aliquam exercitationem reiciendis
+            corrupti. Nulla animi quos accusantium ipsum dolore nisi soluta corporis iste necessitatibus, est dicta
+            consequatur porro libero.
+            Rerum reprehenderit quisquam ea labore veniam, perferendis magnam quidem, quod asperiores cumque qui ullam sunt
+            sequi voluptas facere sit. Delectus itaque tenetur earum quo quisquam sint exercitationem, et maiores est?</p>
+        
+        <h2>Cat Gallery</h2>
+        <p style="font-style: italic; color: #666;">Enjoy these adorable cat pictures!</p>
+        <div class="row">
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#FFE5CC"/>
+                        <ellipse cx="200" cy="180" rx="80" ry="70" fill="#FF8C42"/>
+                        <circle cx="175" cy="165" r="8" fill="#2C3E50"/>
+                        <circle cx="225" cy="165" r="8" fill="#2C3E50"/>
+                        <polygon points="160,140 180,120 200,140" fill="#FF8C42"/>
+                        <polygon points="200,140 220,120 240,140" fill="#FF8C42"/>
+                        <ellipse cx="200" cy="180" rx="5" ry="8" fill="#E74C3C"/>
+                        <path d="M 200 180 Q 185 195 180 200 M 200 180 Q 215 195 220 200" stroke="#2C3E50" stroke-width="2" fill="none"/>
+                        <text x="200" y="270" text-anchor="middle" font-size="20" fill="#2C3E50">Cute Cat 😺</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#E8F5E9"/>
+                        <ellipse cx="200" cy="180" rx="80" ry="70" fill="#A0A0A0"/>
+                        <circle cx="175" cy="165" r="8" fill="#1A1A1A"/>
+                        <circle cx="225" cy="165" r="8" fill="#1A1A1A"/>
+                        <polygon points="155,135 175,115 195,135" fill="#A0A0A0"/>
+                        <polygon points="205,135 225,115 245,135" fill="#A0A0A0"/>
+                        <ellipse cx="200" cy="180" rx="5" ry="8" fill="#FF69B4"/>
+                        <path d="M 200 180 Q 185 195 180 200 M 200 180 Q 215 195 220 200" stroke="#1A1A1A" stroke-width="2" fill="none"/>
+                        <text x="200" y="270" text-anchor="middle" font-size="20" fill="#2C3E50">Adorable Cat 😻</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#FFF3E0"/>
+                        <ellipse cx="200" cy="180" rx="80" ry="70" fill="#D4A574"/>
+                        <circle cx="175" cy="165" r="8" fill="#4A2C2A"/>
+                        <circle cx="225" cy="165" r="8" fill="#4A2C2A"/>
+                        <polygon points="158,138 178,118 198,138" fill="#D4A574"/>
+                        <polygon points="202,138 222,118 242,138" fill="#D4A574"/>
+                        <ellipse cx="200" cy="180" rx="5" ry="8" fill="#F4A460"/>
+                        <path d="M 200 180 Q 185 195 180 200 M 200 180 Q 215 195 220 200" stroke="#4A2C2A" stroke-width="2" fill="none"/>
+                        <text x="200" y="270" text-anchor="middle" font-size="20" fill="#2C3E50">Playful Cat 😸</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#E1F5FE"/>
+                        <ellipse cx="200" cy="180" rx="80" ry="70" fill="#FFFFFF"/>
+                        <line x1="165" y1="170" x2="185" y2="170" stroke="#2C3E50" stroke-width="3"/>
+                        <line x1="215" y1="170" x2="235" y2="170" stroke="#2C3E50" stroke-width="3"/>
+                        <polygon points="157,137 177,117 197,137" fill="#FFFFFF"/>
+                        <polygon points="203,137 223,117 243,137" fill="#FFFFFF"/>
+                        <ellipse cx="200" cy="185" rx="5" ry="8" fill="#FFC0CB"/>
+                        <path d="M 200 185 Q 185 200 180 205 M 200 185 Q 215 200 220 205" stroke="#2C3E50" stroke-width="2" fill="none"/>
+                        <text x="200" y="270" text-anchor="middle" font-size="20" fill="#2C3E50">Sleepy Cat 😴</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#F3E5F5"/>
+                        <ellipse cx="200" cy="180" rx="80" ry="70" fill="#6B4423"/>
+                        <circle cx="175" cy="165" r="10" fill="#2C3E50"/>
+                        <circle cx="175" cy="165" r="4" fill="#87CEEB"/>
+                        <circle cx="225" cy="165" r="10" fill="#2C3E50"/>
+                        <circle cx="225" cy="165" r="4" fill="#87CEEB"/>
+                        <polygon points="156,136 176,116 196,136" fill="#6B4423"/>
+                        <polygon points="204,136 224,116 244,136" fill="#6B4423"/>
+                        <ellipse cx="200" cy="180" rx="5" ry="8" fill="#8B4513"/>
+                        <path d="M 200 180 Q 185 195 180 200 M 200 180 Q 215 195 220 200" stroke="#2C3E50" stroke-width="2" fill="none"/>
+                        <text x="200" y="270" text-anchor="middle" font-size="20" fill="#2C3E50">Curious Cat 🙀</text>
+                    </svg>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6">
+                <div class="thumbnail">
+                    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="400" height="300" fill="#FFFDE7"/>
+                        <ellipse cx="200" cy="180" rx="80" ry="70" fill="#FFB74D"/>
+                        <circle cx="175" cy="160" r="8" fill="#2C3E50"/>
+                        <path d="M 165 155 Q 170 150 175 155" stroke="#2C3E50" stroke-width="2" fill="none"/>
+                        <circle cx="225" cy="160" r="8" fill="#2C3E50"/>
+                        <path d="M 215 155 Q 220 150 225 155" stroke="#2C3E50" stroke-width="2" fill="none"/>
+                        <polygon points="157,137 177,117 197,137" fill="#FFB74D"/>
+                        <polygon points="203,137 223,117 243,137" fill="#FFB74D"/>
+                        <ellipse cx="200" cy="180" rx="5" ry="8" fill="#FF6F00"/>
+                        <path d="M 185 190 Q 200 200 215 190" stroke="#2C3E50" stroke-width="2" fill="none"/>
+                        <text x="200" y="270" text-anchor="middle" font-size="20" fill="#2C3E50">Happy Cat 😺</text>
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
