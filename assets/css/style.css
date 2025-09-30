@@ -1,0 +1,23 @@
+/* Custom styles for the cat gallery */
+
+body {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.thumbnail {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 4px;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: auto;
+}
